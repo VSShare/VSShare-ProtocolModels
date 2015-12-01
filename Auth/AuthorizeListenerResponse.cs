@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Auth
 {
-    public class LoginBroadcasterRequest
+    public class AuthorizeListenerResponse
     {
-        [JsonProperty("token")]
-        public string Token { get; set; }
-
-        [JsonProperty("pass")]
-        public string TokenPass { get; set; }
-
+        [JsonProperty("success")]
+        public bool IsSuccess { get; set; }
     }
 }

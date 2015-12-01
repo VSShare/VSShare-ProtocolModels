@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Requests
+namespace ProtocolModels.Notifications
 {
-    class StartBroadcastRequest
+    public class SwitchActiveSessionNotification : SessionNotificationBase
     {
     }
 }

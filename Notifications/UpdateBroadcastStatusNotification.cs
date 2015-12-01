@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Notifications
 {
-    public class UpdateRoomStatusNotification : NotificationBase
+    public class UpdateBroadcastStatusNotification
     {
         [JsonProperty("view")]
-        public long ViewerCount { get; set; }
+        public long ViewCount { get; set; }
 
         [JsonProperty("visitor")]
-        public long TotalVisitorCount { get; set; }
+        public long VisitorCount { get; set; }
 
     }
 }

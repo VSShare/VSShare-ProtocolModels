@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Requests
 {
-    class GetSessionInfoRequest
+    public class GetSessionInfoRequest : SessionRequestBase
     {
     }
 }

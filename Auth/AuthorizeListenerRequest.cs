@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Auth
 {
-    public class LoginBroadcasterResponse
+    public class AuthorizeListenerRequest
     {
-        [JsonProperty("success")]
-        public bool IsSuccess { get; set; }
+        [JsonProperty("token")]
+        public string Token { get; set; }
+
     }
 }

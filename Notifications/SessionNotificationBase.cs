@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Auth
+namespace ProtocolModels.Notifications
 {
-    public class LoginListenerRequest
+    public abstract class SessionNotificationBase
     {
-        [JsonProperty("token")]
-        public string Token { get; set; }
-
+        [JsonProperty("id")]
+        public string SessionId { get; set; }
     }
+
 }

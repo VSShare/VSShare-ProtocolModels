@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Notifications
 {
-    public class UpdateContentNotification : NotificationBase
+    public class UpdateContentNotification : SessionNotificationBase
     {
         [JsonProperty("data")]
-        public Line Content { get; set; }
+        public List<Line> Content { get; set; }
 
         [JsonProperty("type")]
-        public UpdateType Type { get; set; } = UpdateType.Insert;
+        public UpdateType Type { get; set; } = UpdateType.Append;
 
         [JsonProperty("pos")]
-        public int Position { get; set; } = 0;
+        public uint Position { get; set; } = 0;
 
         [JsonProperty("len")]
-        public int Length { get; set; } = 1;
+        public uint Length { get; set; } = 1;
 
     }
 
@@ -28,7 +28,10 @@ namespace ProtocolModels.Notifications
     {
         Insert = 0,
         Delete = 1,
-        Replace = 2
+        Replace = 2,
+        Append = 3,
+        RemoveMarker = 4,
+        ResetAll = 5
     }
 
 

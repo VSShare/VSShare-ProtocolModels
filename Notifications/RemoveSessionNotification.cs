@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Notifications
 {
-    public class RemoveSessionNotification : NotificationBase
+    public class RemoveSessionNotification : SessionNotificationBase
     {
     }
 }

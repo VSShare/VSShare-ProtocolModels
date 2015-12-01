@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ProtocolModels.Notifications
 {
     
-    public class UpdateSessionNotification : NotificationBase
+    public class UpdateSessionNotification : SessionNotificationBase
     {
         [JsonProperty("name")]
         public string FileName { get; set; }

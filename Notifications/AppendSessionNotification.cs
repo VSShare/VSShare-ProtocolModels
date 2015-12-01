@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProtocolModels.Notifications
 {
-    public class AppendSessionNotification : NotificationBase
+    public class AppendSessionNotification : SessionNotificationBase
     {
         [JsonProperty("name")]
         public string FileName { get; set; }
