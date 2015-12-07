@@ -13,13 +13,13 @@ namespace ProtocolModels.Notification
         [JsonProperty("id")]
         public string Id { get; set; }
 
-        [JsonProperty("name")]
+        [JsonProperty("filename")]
         public string FileName { get; set; }
 
         [JsonProperty("type")]
         public ContentType ContentType { get; set; }
 
-        [JsonProperty("owner")]
+        [JsonProperty("owner_name")]
         public string BroadcasterName { get; set; }
     }
 }

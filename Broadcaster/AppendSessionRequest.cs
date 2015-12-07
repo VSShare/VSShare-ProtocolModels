@@ -10,7 +10,7 @@ namespace ProtocolModels.Broadcaster
 {
     public class AppendSessionRequest
     {
-        [JsonProperty("name")]
+        [JsonProperty("filename")]
         public string FileName { get; set; }
 
         [JsonProperty("type")]

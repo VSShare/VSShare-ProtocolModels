@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 namespace ProtocolModels.Broadcaster
 {
     
-    public class UpdateSessionRequest : SessionRequestBase
+    public class UpdateSessionInfoRequest : SessionRequestBase
     {
-        [JsonProperty("name")]
+        [JsonProperty("filename")]
         public string FileName { get; set; }
 
         [JsonProperty("type")]
