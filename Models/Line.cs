@@ -11,7 +11,7 @@ namespace ProtocolModels.Models
     {
         [JsonProperty("text")]
         public string Text { get; set; }
-        [JsonProperty("ismod")]
+        [JsonProperty("modified")]
         public bool IsModified { get; set; }
 
     }
