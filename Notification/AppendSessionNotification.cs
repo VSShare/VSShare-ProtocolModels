@@ -6,15 +6,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Notifications
+namespace ProtocolModels.Notification
 {
-    public class AppendSessionNotification : SessionNotificationBase
+    public class AppendSessionNotification
     {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
         [JsonProperty("name")]
         public string FileName { get; set; }
 
         [JsonProperty("type")]
-        public ContentType ContentType { get; set; } = ContentType.PlainText;
+        public ContentType ContentType { get; set; }
 
+        [JsonProperty("owner")]
+        public string BroadcasterName { get; set; }
     }
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Notifications
+namespace ProtocolModels.Broadcaster
 {
-    public abstract class SessionNotificationBase
+    public abstract class SessionRequestBase
     {
         [JsonProperty("id")]
         public string SessionId { get; set; }

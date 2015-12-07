@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Requests
+namespace ProtocolModels.Broadcaster
 {
-    public class GetSessionContentRequest : SessionRequestBase
+    public class RemoveSessionRequest : SessionRequestBase
     {
     }
 }

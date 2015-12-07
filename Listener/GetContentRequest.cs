@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Notifications
+namespace ProtocolModels.Listener
 {
-    public class RemoveSessionNotification : SessionNotificationBase
+    public class GetContentRequest : SessionRequestBase
     {
     }
 }

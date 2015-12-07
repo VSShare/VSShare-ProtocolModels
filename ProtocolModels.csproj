@@ -48,20 +48,25 @@
     <Compile Include="Auth\AuthorizeBroadcasterResponse.cs" />
     <Compile Include="Auth\AuthorizeListenerRequest.cs" />
     <Compile Include="Auth\AuthorizeListenerResponse.cs" />
+    <Compile Include="Broadcaster\AppendSessionResponse.cs" />
+    <Compile Include="Models\Cursor.cs" />
     <Compile Include="Models\Line.cs" />
     <Compile Include="Models\ContentType.cs" />
-    <Compile Include="Notifications\AppendSessionNotification.cs" />
-    <Compile Include="Notifications\BroadcastEventNotification.cs" />
-    <Compile Include="Notifications\RemoveSessionNotification.cs" />
-    <Compile Include="Notifications\SessionNotificationBase.cs" />
-    <Compile Include="Notifications\SwitchActiveSessionNotification.cs" />
-    <Compile Include="Notifications\UpdateContentNotification.cs" />
-    <Compile Include="Notifications\UpdateBroadcastStatusNotification.cs" />
-    <Compile Include="Notifications\UpdateSessionNotification.cs" />
+    <Compile Include="Models\SessionInfo.cs" />
+    <Compile Include="Broadcaster\AppendSessionRequest.cs" />
+    <Compile Include="Notification\AppendSessionNotification.cs" />
+    <Compile Include="Notification\BroadcastEventNotification.cs" />
+    <Compile Include="Broadcaster\RemoveSessionRequest.cs" />
+    <Compile Include="Broadcaster\SessionRequestBase.cs" />
+    <Compile Include="Broadcaster\UpdateContentRequest.cs" />
+    <Compile Include="Notification\UpdateBroadcastStatusNotification.cs" />
+    <Compile Include="Broadcaster\UpdateCursorRequest.cs" />
+    <Compile Include="Broadcaster\UpdateSessionRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Requests\GetSessionContentRequest.cs" />
-    <Compile Include="Requests\GetSessionInfoRequest.cs" />
-    <Compile Include="Requests\SessionRequestBase.cs" />
+    <Compile Include="Listener\GetContentRequest.cs" />
+    <Compile Include="Listener\GetCursorRequest.cs" />
+    <Compile Include="Listener\GetSessionRequest.cs" />
+    <Compile Include="Listener\SessionRequestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

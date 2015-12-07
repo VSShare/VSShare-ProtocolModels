@@ -6,10 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Notifications
+namespace ProtocolModels.Broadcaster
 {
-    
-    public class UpdateSessionNotification : SessionNotificationBase
+    public class AppendSessionRequest
     {
         [JsonProperty("name")]
         public string FileName { get; set; }

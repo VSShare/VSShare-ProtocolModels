@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProtocolModels.Notifications
+namespace ProtocolModels.Notification
 {
     public class BroadcastEventNotification
     {
