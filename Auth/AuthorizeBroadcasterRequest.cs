@@ -9,11 +9,17 @@ namespace ProtocolModels.Auth
 {
     public class AuthorizeBroadcasterRequest
     {
-        [JsonProperty("token")]
-        public string Token { get; set; }
+        [JsonProperty("user_name")]
+        public string UserName { get; set; }
 
-        [JsonProperty("pass")]
-        public string TokenPass { get; set; }
+        [JsonProperty("access_token")]
+        public string AccessToken { get; set; }
+
+        [JsonProperty("room_name")]
+        public string RoomName { get; set; }
+
+        [JsonProperty("room_token")]
+        public string RoomToken { get; set; }
 
     }
 }
