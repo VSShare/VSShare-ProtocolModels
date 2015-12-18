@@ -14,7 +14,7 @@ namespace ProtocolModels.Models
 
         public string Nickname { get; set; }
 
-        public ContentType Type { get; set; }
+        public string ContentType { get; set; }
 
     }
 

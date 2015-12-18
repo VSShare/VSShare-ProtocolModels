@@ -17,7 +17,7 @@ namespace ProtocolModels.Notification
         public string FileName { get; set; }
 
         [JsonProperty("type")]
-        public ContentType ContentType { get; set; }
+        public string ContentType { get; set; }
 
         [JsonProperty("owner_name")]
         public string BroadcasterName { get; set; }

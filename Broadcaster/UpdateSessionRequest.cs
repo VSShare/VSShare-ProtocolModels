@@ -15,7 +15,7 @@ namespace ProtocolModels.Broadcaster
         public string FileName { get; set; }
 
         [JsonProperty("type")]
-        public ContentType ContentType { get; set; } = ContentType.PlainText;
+        public string ContentType { get; set; } = "";
 
     }
 }

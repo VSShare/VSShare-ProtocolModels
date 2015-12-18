@@ -51,7 +51,6 @@
     <Compile Include="Broadcaster\AppendSessionResponse.cs" />
     <Compile Include="Models\Cursor.cs" />
     <Compile Include="Models\Line.cs" />
-    <Compile Include="Models\ContentType.cs" />
     <Compile Include="Models\SessionInfo.cs" />
     <Compile Include="Broadcaster\AppendSessionRequest.cs" />
     <Compile Include="Notification\AppendSessionNotification.cs" />
